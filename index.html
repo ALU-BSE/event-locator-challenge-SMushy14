@@ -7,10 +7,8 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
@@ -30,9 +28,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link active" href="index.html">Home</a>
               <a class="nav-link" href="events.html">Events</a>
             </div>
           </div>
@@ -43,35 +39,22 @@
     <main>
       <section class="container my-5">
         <h1 class="text-center mb-4">Events around you</h1>
-        <form
-          action="events.html"
-          method="GET"
-          class="row g-3 justify-content-center"
-        >
+        <form action="events.html" method="GET" class="row g-3 justify-content-center">
           <div class="col-md-4">
-            <input
-              type="text"
-              name="search"
-              class="form-control"
-              placeholder="Search for events..."
-            />
+            <input type="text" name="search" class="form-control" placeholder="Search for events..." />
           </div>
           <div class="col-md-3">
-            <input
-              type="date"
-              name="date"
-              class="form-control"
-              placeholder="Date"
-            />
+            <input type="date" name="date" class="form-control" />
           </div>
           <div class="col-md-3">
-            <select name="category" class="form-select" placeholder="Filter Category">
-              <option value="music">Charity Events</option>
-              <option value="sports">Music Festivals</option>
-              <option value="tech">Business Events</option>
-              <option value="tech">Sports Events</option>
-              <option value="tech">Tech Events</option>
-              <option value="tech">Movie Events</option>
+            <select name="category" class="form-select">
+              <option value="" disabled selected>Filter by Category...</option>
+              <option value="Charity Events">Charity Events</option>
+              <option value="Music Festivals">Music Festivals</option>
+              <option value="Business Events">Business Events</option>
+              <option value="Sports Events">Sports Events</option>
+              <option value="Tech Events">Tech Events</option>
+              <option value="Movie Events">Movie Events</option>
             </select>
           </div>
           <div class="col-12 text-center">
@@ -79,16 +62,8 @@
           </div>
         </form>
       </section>
-      <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-        crossorigin="anonymous"
-      ></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     </main>
   </body>
 </html>

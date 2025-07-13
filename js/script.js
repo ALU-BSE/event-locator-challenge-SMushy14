@@ -9,7 +9,7 @@ const allEvents = [
       "Bring happiness to Hope Orphanage children by spending time and sharing love with the amazing kids. Activities will include games, art, singing, bible studying, and lunch together.",
   },
   {
-    id: 1,
+    id: 2,
     name: "Afro Music Fusion",
     date: "2025-07-14",
     location: "Kinyinya",
@@ -18,7 +18,7 @@ const allEvents = [
       "Come Enjoy wonderful afro music from creative DJ's in Rwanda. Several DJ's will be there including DJ Ace. Entry fee is 5k RWF. Place is Lemon Bar Kigali",
   },
   {
-    id: 1,
+    id: 3,
     name: "CAF semifinals(Rwanda and Nigeria)",
     date: "2025-07-15",
     location: "Amahoro Stadium",
@@ -27,7 +27,7 @@ const allEvents = [
       "Come and cheer for your favorite team this Tuesday, in a match between Rwanda and Nigeria at Amahoro Stadium in Remera. Enrty fee is 2k RWF and you can book online via amahorostadium.co.kgl",
   },
   {
-    id: 1,
+    id: 4,
     name: "Future of Africa centre visit",
     date: "2025-07-12",
     location: "Kackiru",
@@ -36,7 +36,7 @@ const allEvents = [
       "Future of Africa is a centre that help street youths in Kigali and create a new brighter future for them. Come with us this Saturday to meet these youths and bring a smile and hope on their faces.",
   },
   {
-    id: 1,
+    id: 5,
     name: "RNB and Soul Music Festival",
     date: "2025-07-16",
     location: "Remera",
@@ -45,7 +45,7 @@ const allEvents = [
       "Are you a lover of RNB or Souls music? Then this is your chance to vibe with other people. Come this Saturday and enjoy good RNB and Souls music from the best DJ. There is no entry fee but no idle sitting. See you there",
   },
   {
-    id: 1,
+    id: 6,
     name: "NBL Finals! (Rwanda VS Kenya)",
     date: "2025-07-17",
     location: "BK Arena",
@@ -54,7 +54,7 @@ const allEvents = [
       "The day we've been all waiting for is finally here. Come at BK Arena this thursday to cheer for you favorite final team. Tickets available online at bkarena.co.kgl",
   },
   {
-    id: 1,
+    id: 7,
     name: "AI Immersion",
     date: "2025-07-16",
     location: "African Leadership University, Bumongo",
@@ -63,7 +63,7 @@ const allEvents = [
       "Ever thought of AI taking over the world? Well, come this wednesday to Africa Leadership University to meet experts in Artificial Intelligence and dive deeper into the world of AI.",
   },
   {
-    id: 1,
+    id: 8,
     name: "Startup to Business",
     date: "2025-07-12",
     location: "Gisenyi",
@@ -72,7 +72,7 @@ const allEvents = [
       "Entrepreneurship is having guts to put things at risk but with a strong faith of success. Come this Monday to meet different business experts and learn how to turn your startup to a profitable business",
   },
   {
-    id: 1,
+    id: 9,
     name: "Movie Night",
     date: "2025-07-14",
     location: "Nyabugogo",
@@ -81,7 +81,7 @@ const allEvents = [
       "Having Monday fever? Well who said you cant cool things off on a Monday? Join us this Monday for a short movie night at Nyabugogo to cool things off. Entry fee in just 1K RWF. Drinks available for free.",
   },
   {
-    id: 1,
+    id: 10,
     name: "Programming 1o1",
     date: "2025-07-17",
     location: "Remera",
