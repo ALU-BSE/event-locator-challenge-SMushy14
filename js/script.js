@@ -5,6 +5,7 @@ const allEvents = [
     date: "2025-07-12",
     location: "Zindiro",
     category: "Charity Events",
+    image: "images/charity-01.jpg",
     description:
       "Bring happiness to Hope Orphanage children by spending time and sharing love with the amazing kids. Activities will include games, art, singing, bible studying, and lunch together.",
   },
@@ -14,6 +15,7 @@ const allEvents = [
     date: "2025-07-14",
     location: "Kinyinya",
     category: "Music Festivals",
+    image: "images/music-01.jpg",
     description:
       "Come Enjoy wonderful afro music from creative DJ's in Rwanda. Several DJ's will be there including DJ Ace. Entry fee is 5k RWF. Place is Lemon Bar Kigali",
   },
@@ -23,6 +25,7 @@ const allEvents = [
     date: "2025-07-15",
     location: "Amahoro Stadium",
     category: "Sports Events",
+    image: "images/sport-01.jpeg",
     description:
       "Come and cheer for your favorite team this Tuesday, in a match between Rwanda and Nigeria at Amahoro Stadium in Remera. Enrty fee is 2k RWF and you can book online via amahorostadium.co.kgl",
   },
@@ -32,6 +35,7 @@ const allEvents = [
     date: "2025-07-12",
     location: "Kackiru",
     category: "Charity Events",
+    image: "images/charity-02.jpg",
     description:
       "Future of Africa is a centre that help street youths in Kigali and create a new brighter future for them. Come with us this Saturday to meet these youths and bring a smile and hope on their faces.",
   },
@@ -41,6 +45,7 @@ const allEvents = [
     date: "2025-07-16",
     location: "Remera",
     category: "Music Festivals",
+    image: "images/music-02.jpg",
     description:
       "Are you a lover of RNB or Souls music? Then this is your chance to vibe with other people. Come this Saturday and enjoy good RNB and Souls music from the best DJ. There is no entry fee but no idle sitting. See you there",
   },
@@ -50,6 +55,7 @@ const allEvents = [
     date: "2025-07-17",
     location: "BK Arena",
     category: "Sports Events",
+    image: "images/sport-02.jpg",
     description:
       "The day we've been all waiting for is finally here. Come at BK Arena this thursday to cheer for you favorite final team. Tickets available online at bkarena.co.kgl",
   },
@@ -59,6 +65,7 @@ const allEvents = [
     date: "2025-07-16",
     location: "African Leadership University, Bumongo",
     category: "Tech Events",
+    image: "images/tech-01.jpg",
     description:
       "Ever thought of AI taking over the world? Well, come this wednesday to Africa Leadership University to meet experts in Artificial Intelligence and dive deeper into the world of AI.",
   },
@@ -68,6 +75,7 @@ const allEvents = [
     date: "2025-07-12",
     location: "Gisenyi",
     category: "Business Events",
+    image: "images/business-01.jpg",
     description:
       "Entrepreneurship is having guts to put things at risk but with a strong faith of success. Come this Monday to meet different business experts and learn how to turn your startup to a profitable business",
   },
@@ -77,6 +85,7 @@ const allEvents = [
     date: "2025-07-14",
     location: "Nyabugogo",
     category: "Movie Events",
+    image: "images/movie-01.jpg",
     description:
       "Having Monday fever? Well who said you cant cool things off on a Monday? Join us this Monday for a short movie night at Nyabugogo to cool things off. Entry fee in just 1K RWF. Drinks available for free.",
   },
@@ -86,7 +95,9 @@ const allEvents = [
     date: "2025-07-17",
     location: "Remera",
     category: "Tech Events",
-    description: "Are you a beginner in tech but still want to pursue your career in tech? You're at the right path. Come to learn more about programming and ways to make your career path come true.",
+    image: "images/tech-02.jpg",
+    description:
+      "Are you a beginner in tech but still want to pursue your career in tech? You're at the right path. Come to learn more about programming and ways to make your career path come true.",
   },
 ];
 
@@ -121,25 +132,27 @@ function renderallEvents() {
     .map(
       (e) => `
         <div class="col-12 col-sm-6 col-lg-3 mb-4">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="Event image">
-            <div class="card-body">
-              <h5 class="card-title">${e.name}</h5>
-              <p id="short-desc-${e.id}" class="card-text">
-                ${e.description.slice(0, 45)}...
-              </p>
-              <p id="full-desc-${e.id}" class="card-text d-none">
-                ${e.description}
-              </p>
-              <p class="card-text"><small><strong>Date: </strong>${e.date}</small></p>
-              <a href="event-details.html?id=${
-                e.id
-              }" class="btn btn-outline-secondary btn-sm ms-2">
-                More Info...
-              </a>
-            </div>
-          </div>
-        </div>
+  <div class="card h-100">
+    <img src="${e.image}" class="card-img-top object-fit-cover" alt="${
+        e.name
+      }" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <h5 class="card-title">${e.name}</h5>
+      <p id="short-desc-${e.id}" class="card-text">
+        ${e.description.slice(0, 45)}...
+      </p>
+      <p id="full-desc-${e.id}" class="card-text d-none">
+        ${e.description}
+      </p>
+      <p class="card-text"><small><strong>Date:</strong> ${e.date}</small></p>
+      <a href="event-details.html?id=${
+        e.id
+      }" class="btn btn-outline-secondary btn-sm ms-2">
+        More Info...
+      </a>
+    </div>
+  </div>
+</div>
       `
     )
     .join("");
