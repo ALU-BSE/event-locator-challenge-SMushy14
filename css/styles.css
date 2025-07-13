@@ -1,8 +1,18 @@
 body {
   background-color: #b3d0c6;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #1b4543;
+}
+.home {
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 button {
   background-color: #f0be6f;
